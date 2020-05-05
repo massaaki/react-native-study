@@ -1,10 +1,10 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Text} from 'react-native';
 
 // import { Container } from './styles';
 
 const user = () => {
-  return <View />;
+  return <Text>USER</Text>;
 };
 
 export default user;
