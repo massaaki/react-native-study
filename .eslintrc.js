@@ -37,5 +37,7 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'react/state-in-constructor': 'off',
     'react/no-unused-state': 'off',
+    'react/static-property-placement': 'off',
+    'react/react/require-default-props': 'off',
   },
 };

@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-
 import Main from './pages/main';
 import User from './pages/user';
 
@@ -20,7 +19,11 @@ export default function Routes() {
         component={Main}
         options={{title: 'Dashboard'}}
       />
-      <Stack.Screen name="User" component={User} />
+      <Stack.Screen
+        name="User"
+        component={User}
+        options={{title: 'Detalhes'}}
+      />
     </Stack.Navigator>
   );
 }
