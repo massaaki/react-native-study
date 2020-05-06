@@ -1,20 +1,30 @@
 import React from 'react';
-import {Text, Button, View} from 'react-native';
+// import {Button} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-// import { Container } from './styles';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import {Container, Form, Input, SubmitButton} from './styles';
 
-const main = () => {
-  const navigation = useNavigation();
+export default function main() {
+  // const navigation = useNavigation();
 
   return (
-    <View>
-      <Text>MAIN</Text>
-      <Button
+    <Container>
+      <Form>
+        <Input
+          autoCorrect={false}
+          autoCapitalize="none"
+          placeholder="Adicionar usuario"
+        />
+
+        <SubmitButton>
+          <Icon name="add" size={20} color="#fff" />
+        </SubmitButton>
+      </Form>
+
+      {/* <Button
         title="Navigate to users"
         onPress={() => navigation.navigate('User')}
-      />
-    </View>
+      /> */}
+    </Container>
   );
-};
-
-export default main;
+}
